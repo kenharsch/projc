@@ -7,7 +7,7 @@
 	<div class="field">
     	<%= f.label :content, "Code" %><br>
     	<%= f.hidden_field :content, {:id => 'content_field'}%>
-    	<div id="editor1" style="height: 450px; width: 525px"><%= @submission.content%></div>
+    	<div id="editor1" style="height: 450px; width: 525px" ><%= @submission.content%></div>
     	<br><br>
     </div>
 <%end%>
@@ -20,5 +20,7 @@
 <script>
   var editor1 = ace.edit("editor1");
   editor1.setTheme("ace/theme/chrome");
-  editor1.getSession().setMode("ace/mode/java");   
+  editor1.getSession().setMode("ace/mode/java");
+  editor1.setOptions({minLines: 25, maxLines: 25});
+
 </script>
