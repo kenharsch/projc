@@ -6174,7 +6174,7 @@ var Document = function(text) {
     };
 
     this.$clipPosition = function(position) {
-        var length = this.getLength();
+        var length = 25;
         if (position.row >= length) {
             position.row = Math.max(0, length - 1);
             position.column = this.getLine(length-1).length;
