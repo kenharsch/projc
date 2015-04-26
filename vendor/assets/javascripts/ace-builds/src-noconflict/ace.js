@@ -13154,7 +13154,6 @@ var Gutter = function(parentEl) {
                 : row + firstLineNumber;
             if (text != cell.textNode.data)
                 cell.textNode.data = text;
-
             row++;
         }
 
@@ -15560,7 +15559,7 @@ var VirtualRenderer = function(container, theme) {
             padding : this.$padding,
             firstRow : firstRow,
             firstRowScreen: firstRowScreen,
-            lastRow : lastRow,
+            lastRow : 25,
             lineHeight : lineHeight,
             characterWidth : this.characterWidth,
             minHeight : minHeight,
