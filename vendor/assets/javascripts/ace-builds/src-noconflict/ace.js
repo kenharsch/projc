@@ -15559,7 +15559,7 @@ var VirtualRenderer = function(container, theme) {
             padding : this.$padding,
             firstRow : firstRow,
             firstRowScreen: firstRowScreen,
-            lastRow : 25,
+            lastRow : 24,
             lineHeight : lineHeight,
             characterWidth : this.characterWidth,
             minHeight : minHeight,
