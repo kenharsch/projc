@@ -15489,7 +15489,7 @@ var VirtualRenderer = function(container, theme) {
         
         var hideScrollbars = size.height <= 2 * this.lineHeight;
         var screenLines = this.session.getScreenLength();
-        var maxHeight = screenLines * this.lineHeight;
+        var maxHeight = 25 * this.lineHeight;
 
         var offset = this.scrollTop % this.lineHeight;
         var minHeight = size.scrollerHeight + this.lineHeight;
